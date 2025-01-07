@@ -123,23 +123,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -148,7 +131,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            This research project aims to develop a new technique for translating <b>2D sketches</b> into <b>3D assets</b> like building models using <b>machine learning</b> and <b>Constructive Solid Geometry (CSG)</b> algorithms. The ability to quickly create 3D building models from simple freehand sketches has widespread applications in fields like <b>architecture</b> and <b>construction</b>. The key innovation is the use of CSG principles to understand geometric elements from sketches, extrude them into 3D, and combine simple shapes to create complex structures.<br> 
+            This allows the creation of building models with walls, windows, doors, and other features that closely match the original sketch, without requiring extensive 3D modeling expertise. Specialized sketch recognition methods, including machine learning techniques for <b>edge detection</b> and <b>point decimation</b>, are used to identify lines, arcs, and intersections, and transform them into the necessary CSG primitives. We plan to develop a user-friendly <b>web interface</b> where users can sketch freehand and see a live <b>3D model preview</b> generated in real-time by reconstructing surfaces from the identified geometric features. This integrated sketching and 3D modeling environment provides an intuitive workflow, harnessing CSG techniques to generate complex forms from sparse 2D input. Overall, this research aims to improve sketch-based 3D modeling methods and enable more users to create 3D content with ease. The researchers believe this work has the potential to significantly enhance productivity in construction planning, enable faster design iterations, and increase <b>architectural creativity</b>.
           </p>
         </div>
       </div>
@@ -157,38 +141,74 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Teaser video-->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2> <!-- Added title -->
+        <div class="content has-text-centered">
+          <video poster="" id="tree" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/banner_video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h3 class="subtitle is-5">
+          This video serves as a simple illustration of the concepts discussed in our research paper.
+        </h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3 has-text-centered">Visual Representations</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel1.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          3D Reconstruction Pipeline
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel2.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Image Filter Processing
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel3.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          3D Reconstruction Pipeline
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/carousel4.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Wall Opening Creation Process
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/carousel5.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Blind Hole Creation and Example
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/carousel6.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Results of 2D Sketch-to-3D Model Translation with Texturing and Unity Output
       </h2>
     </div>
   </div>
@@ -201,49 +221,44 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -251,7 +266,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -260,7 +275,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +285,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 

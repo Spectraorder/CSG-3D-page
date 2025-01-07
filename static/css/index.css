@@ -133,5 +133,24 @@ body {
   font-size: smaller;
 }
 
+.item {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;    /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  height: 100%;           /* Make sure it takes the full carousel height */
+  text-align: center;     /* Ensure text is centered */
+}
+
+.item img {
+  max-width: 80%;
+  height: auto;
+}
+
+.item h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 
 
